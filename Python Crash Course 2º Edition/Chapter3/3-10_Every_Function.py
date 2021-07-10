@@ -1,0 +1,28 @@
+dream_smarthphones = ['pixel 3xl', 'oneplus 7t pro', 'galaxy note 10', 'iphone 11 pro', 'huawei p30 pro', 'xiaomi mi9', 'xiaomi mi 9t pro', 'galaxy s10', 'moto razr', 'pixel 4xl', 'redmi note 8', 'xiaomi mi note 10', 'moto z4']
+print(dream_smarthphones)
+print(len(dream_smarthphones))
+dream_smarthphones[0] = 'pixel 4'
+print(dream_smarthphones)
+dream_smarthphones.append('pixel 3axl')
+print(dream_smarthphones)
+print(len(dream_smarthphones))
+dream_smarthphones.insert(3, 'zenfone 6')
+print(dream_smarthphones)
+print(len(dream_smarthphones))
+del dream_smarthphones[6]
+print(dream_smarthphones)
+popped_dream_smarthphones = dream_smarthphones.pop(4)
+print(dream_smarthphones)
+print(popped_dream_smarthphones)
+i_dont_liked = 'moto razr'
+dream_smarthphones.remove(i_dont_liked)
+print(dream_smarthphones)
+print(sorted(dream_smarthphones))
+print(dream_smarthphones)
+dream_smarthphones.sort()
+print(dream_smarthphones)
+dream_smarthphones.sort(reverse=True)
+print(dream_smarthphones)
+dream_smarthphones.reverse()
+print(dream_smarthphones)
+print(f'I want to have this {len(dream_smarthphones)} smarthphones!')
