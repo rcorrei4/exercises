@@ -2,9 +2,9 @@ top1_most_calories = 0
 top2_most_calories = 0
 top3_most_calories = 0
 
-with open('input.txt', 'r') as input:
+with open('input.txt', 'r') as input_data:
 	elf_calories = []
-	input_lines = input.readlines()
+	input_lines = input_data.readlines()
 	for calorie in input_lines:
 		calorie = calorie.rstrip('\n')
 

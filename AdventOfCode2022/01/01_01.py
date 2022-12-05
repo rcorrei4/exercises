@@ -1,7 +1,7 @@
 elf_most_calories = []
-with open('input.txt', 'r') as input:
+with open('input.txt', 'r') as input_data:
 	elf_calories = []
-	for calorie in input.readlines():
+	for calorie in input_data.readlines():
 		calorie = calorie.rstrip('\n')
 		if calorie:
 			elf_calories.append(int(calorie))
