@@ -8,12 +8,12 @@ for pairs in input_data:
 	section2 = [x for x in range(int(pair[1][0]), int(pair[1][1])+1)]
 
 	if len(section1) > len(section2):
-		laping = [x for x in section2 if x in section1]
-		if laping == section2:
+		intersection = [x for x in section2 if x in section1]
+		if intersection == section2:
 			count += 1
 	else:
-		laping = [x for x in section1 if x in section2]
-		if laping == section1:
+		intersection = [x for x in section1 if x in section2]
+		if intersection == section1:
 			count += 1
 
 print(count)
@@ -25,8 +25,8 @@ for pairs in input_data:
 	section1 = [x for x in range(int(pair[0][0]), int(pair[0][1])+1)]
 	section2 = [x for x in range(int(pair[1][0]), int(pair[1][1])+1)]
 
-	laping = [x for x in section1 if x in section2]
-	if laping:
+	intersection = [x for x in section1 if x in section2]
+	if intersection:
 		count += 1
 
 print(count)
